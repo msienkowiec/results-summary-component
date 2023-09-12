@@ -247,5 +247,46 @@ body {
   text-align: center;
   background-color: var(--clr-neutral-dark-gray-blue);
   padding: 1rem;
-  border-radius:31rem;
+  border-radius: 3rem;
+}
+
+.btn:hover {
+  background-image: linear-gradient( var(--clr-grad-bg-light-slate-blue), var(--clr-grad-bg-light-royal-blue));
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    min-height: 100vh;
+  }
+
+  .card {
+    display: flex;
+    max-width: 42rem;
+  }
+
+  .card > * {
+    flex-basis: 100%;
+  }
+
+  .card__result {
+    border-radius: 2rem;
+    justify-content: space-evenly;
+  }
+
+  .card__result > .score {    
+    width: 11.5rem;
+    height: 11.5rem;  
+  }
+  
+  .card__result > .score > p:first-child {
+    font-size: 4rem;
+  }
+
+  .card__summary {
+    padding: 2rem 2.5rem;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 0px 0px 23px -16px black;
+  }
+  
+  
 }
