@@ -261,7 +261,7 @@ body {
 
   .card {
     display: flex;
-    max-width: 42rem;
+    max-width: 45rem;
   }
 
   .card > * {
@@ -284,9 +284,16 @@ body {
 
   .card__summary {
     padding: 2rem 2.5rem;
+    padding: 2rem 2.5rem 2rem 4.5rem;
     border-radius: 0 2rem 2rem 0;
-    box-shadow: 0px 0px 23px -16px black;
+    box-shadow: 3px 3px 23px -16px black;
+    position: relative;
+    left: -2rem;
+    z-index: -1;
   }
-  
+
+  .btn {
+    padding: .75rem;
+  }
   
 }
